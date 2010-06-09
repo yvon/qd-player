@@ -494,7 +494,7 @@ public function playImage(imageFile:String, was_stopped:Boolean = false):void
 
 public function mouseOverThumb(e:MouseEvent):void
 {
-  e.currentTarget.setStyle('borderColor', 0xFF6600);
+  e.currentTarget.setStyle('borderColor', 0x0867b0);
   var data:XML = sources.source[e.currentTarget.repeaterIndex + 4 * page];
   videoName.text = data.name;
   videoDescription.text = data.description;
@@ -502,7 +502,7 @@ public function mouseOverThumb(e:MouseEvent):void
 
 public function mouseOutThumb(e:MouseEvent):void
 {
-  e.currentTarget.setStyle('borderColor', (e.currentTarget.repeaterIndex + 4 * page == activeSequenceIndex) ? 0xFF6600 : 0xFFFFFF);
+  e.currentTarget.setStyle('borderColor', (e.currentTarget.repeaterIndex + 4 * page == activeSequenceIndex) ? 0x0867b0 : 0xFFFFFF);
   var data:XML = sources.source[activeSequenceIndex];
   videoName.text = data.name;
   videoDescription.text = data.description;
